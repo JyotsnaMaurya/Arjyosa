@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>S.I.T. Registration form</title>
+  <title>S.I.T. Registration Form</title>
   <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
   <div class="container">
     <h2>Registration Form</h2>
-    <form>
+    <form onsubmit="return validatePasswords()">
       <div class="form-group">
         <input type="text" placeholder="Full Name" required>
       </div>
@@ -30,21 +30,23 @@
         </select>
       </div>
       <div class="form-group">
-        <input type="password" placeholder="Create Password" required>
+        <input type="password" id="password" placeholder="Create Password (min 8 characters)" required>
       </div>
       <div class="form-group">
-        <input type="password" placeholder="Confirm Password" required>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+        <small id="password-error" style="color: red; display: none;">⚠ Passwords do not match or are too short</small>
       </div>
       <div class="form-group">
         <input type="text" placeholder="Enter Captcha" required>
         <div class="captcha-img">
           A B C 1 2 3
-          <span style="cursor: pointer;">🔄</span>
+          <button type="button" style="background: none; border: none; color: white; font-size: 18px; cursor: pointer;">🔄</button>
         </div>
       </div>
-      <button class="register-btn" type="submit">Register</button>
+      <button class="registration-btn" type="submit">Register</button>
     </form>
   </div>
+  
   <footer>
     <a href="#">About Us</a> | 
     <a href="#">FAQ</a> | 
@@ -52,5 +54,29 @@
     © 2025 Starlight Institute of Tech
   </footer>
 
+  <script>
+    function validatePasswords() {
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirm-password").value;
+      const errorMsg = document.getElementById("password-error");
+
+      // user must set 8character password
+      if (password.length < 8) {
+        errorMsg.innerText = "⚠ Password must be at least 8 characters long";
+        errorMsg.style.display = "block";
+        return false;
+      }
+
+      // password should match in both
+      if (password !== confirmPassword) {
+        errorMsg.innerText = "⚠ Passwords do not match";
+        errorMsg.style.display = "block";
+        return false;
+      }
+
+      errorMsg.style.display = "none";
+      return true;
+    }
+  </script>
 </body>
-  </html>
+</html>
