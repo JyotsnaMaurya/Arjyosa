@@ -1,0 +1,80 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1;
+}
+
+.container {
+  max-width: 500 px;
+  margin: 30 px auto;
+  background: white;
+  border-radius: 10 px;
+  box-shadow: 0 0 10 px rgba (0,0,0,0.1);
+  padding: 25 px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20 px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+  width:100 %;
+  padding: 10 px;
+  margin: 8 px 0;
+  border: 1 px solid #ccc;
+  border-radius: 5 px;
+}
+
+.form-group {
+  margin-bottom: 15 px;
+}
+
+.captcha-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #001F3F;
+  color: white;
+  font-weight: bold;
+  font-size: 20 px;
+  padding: 10 px;
+  margin-top: 5 px;
+  border-radius: 5 px;
+}
+
+.registration-btn {
+  width:100 %;
+  padding: 10 px;
+  background-color: #001F3F;
+  border: none;
+  border-radius: 5 px;
+  color: white;
+  font-weight: bold;
+  margin-top: 15 px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #003366;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30 px;
+  padding: 10 px;
+  background-color: #001F3F;
+  color: white;
+  font-size: 12 px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8 px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  }
