@@ -152,6 +152,34 @@
     </form>
   </section>
 
+  <section class="payment-section">
+    <h2 class="payment-title">Payment Details</h2>
+    <form id="paymentForm">
+      <p class="amount-heading">Choose Payment Amount *</p>
+
+      <div class="amount-options">
+        <label class="amount-label">
+          <input type="radio" name="amount" value="20000" required>
+          ₹20,000
+        </label>
+        <label class="amount-label">
+          <input type="radio" name="amount" value="15000">
+          ₹15,000
+        </label>
+        <label class="amount-label">
+          <input type="radio" name="amount" value="10000">
+          ₹10,000
+        </label>
+        <label class="amount-label">
+          <input type="radio" name="amount" value="other" id="otherRadio">
+          Other
+        </label>
+      </div>
+      <input type="number" id="otherAmount" name="otherAmount" placeholder="Enter custom amount" min="100" step="100" disabled class="custom-amount-input">
+      <button type="submit" class="pay-button">Pay Now</button>
+    </form>
+  </section>
+
   <footer>
     <a href="#">About Us</a> |
     <a href="#">FAQ</a> |
@@ -159,45 +187,7 @@
     © 2025 Starlight Institute of Tech
   </footer>
 
-  <!-- JS Scripts -->
-  <script>
-    function loginFunction() {
-      alert("Login Successful! (Yeh abhi demo version hai)");
-      return false;
-    }
+  <script src="script1.js"></script>
 
-    const otherRadio = document.getElementById('otherRadio');
-    const otherAmountInput = document.getElementById('otherAmount');
-    const paymentForm = document.getElementById('paymentForm');
-
-    paymentForm.amount.forEach(radio => {
-      radio.addEventListener('change', () => {
-        if (otherRadio.checked) {
-          otherAmountInput.disabled = false;
-          otherAmountInput.required = true;
-          otherAmountInput.focus();
-        } else {
-          otherAmountInput.disabled = true;
-          otherAmountInput.required = false;
-          otherAmountInput.value = '';
-        }
-      });
-    });
-
-    paymentForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      let amount;
-      if (otherRadio.checked) {
-        amount = otherAmountInput.value;
-        if (!amount || isNaN(amount) || amount < 100) {
-          alert('Please enter a valid amount (minimum ₹100)');
-          return;
-        }
-      } else {
-        amount = paymentForm.amount.value;
-      }
-      alert('You are paying ₹' + amount + '. Proceeding to payment gateway...');
-    });
-  </script>
 </body>
 </html>
