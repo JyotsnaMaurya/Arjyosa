@@ -1,0 +1,241 @@
+/* Main changes for all */
+  /* body */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+  /* Main head */
+    .mainhead, footer {
+      background: #000f66;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      max-height: 160px;
+    }
+
+  /* Login button in top-right corner*/
+    .login-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #4c56af;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .login-button:hover {
+      background-color: #454ba0;
+    }
+
+  /* for main navigation */
+    nav.mainnav {
+      background-color: #1028af;
+      text-align: center;
+      padding: 15px;
+      font-size: 20px;
+    }
+    nav.mainnav a {
+      color: #d1d3f3;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    nav.mainnav a:hover {
+      background-color: #0b1d86;
+      padding: 20px;
+      color: #ffffffbb;
+    }
+
+/* For login.html */
+  /* container */
+    .container {
+      max-width: 400px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+  /* login-box and button */
+    .login-box input,
+    .login-box button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: none;
+    }
+
+  /* only for login box */
+    .login-box .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+    }
+
+  /* for login button in login page */
+    .login-btn {
+      background: #2980b9;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+/* The common design for all code in apply */
+  /* the area of the form */
+    .apply {
+      align-self: center;
+      max-width: 65%;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 20px;
+      border-color: #000855;
+      background-color: #b8bfff;
+    }
+
+    .apply h2 {
+      text-decoration: underline;
+      text-align: center;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+      font-size: 30px;
+      color:#2e388d;
+    }
+
+    .apply label {
+      font-size: 1.7rem;
+      color: #343e99;
+    }
+  
+
+    .apply input, .apply select,
+    .apply textarea, .apply button {
+      background-color: #858ad3;
+      border-color: #242e8d;
+      border-radius: 10px;
+      margin-bottom: 18px;
+      font-size: 1.5rem;
+      color: #d0d5ff;
+      padding: 12px;
+      width: 90%;
+    }
+
+    .apply textarea {
+      resize: none;
+    }
+
+    .personal-details, .academic-details, .course-selection,
+    .documents-upload, .contact-details, .declaration-submit,
+    .payment-section {
+      background-color: #cacdff;
+      border-radius: 15px;
+      padding: 1.5rem;
+    }
+
+    .gender-group {
+      background-color: #858ad3;
+      border-color: #242e8d;
+      border-radius: 8px;
+      padding: 5px;
+      display: flex;
+    }
+
+/* Payment section */
+  /* the whole area of payment code */
+    .payment-section {
+      max-width: 600px;
+      margin: 30px auto 60px auto;
+      background: #7e80dd;
+      padding: 35px;
+      border-radius: 20px;
+    }
+
+    .payment-title {
+      text-align: center;
+      color: #ecf0f1;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      font-size: 40px;
+    }
+
+    .amount-heading {
+      color: #ecf0f1;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .amount-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+  .amount-label {
+    flex: 1;
+    min-width: 120px;
+    background: #515aac;
+    color: #fff;
+    padding: 12px;
+    border-radius: 15px;
+    border-color: #000855;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .amount-label input[type="radio"] {
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .custom-amount-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+  }
+
+  .pay-button {
+    background-color: #363f92;
+    color: #ffffff
+  }
+
+  .pay-button:hover {
+    background: #5e5ece;
+  }
+
+/* footer */
+  footer {
+    background: #000f66;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-height: 450px;
+  }
+
+  footer a {
+    color: #bac4f1;
+    text-decoration: none;
+    margin: 0 8px;
+  }
+
+hr {
+  background-color: #626ccc;;
+  height: 6px;
+}
