@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S.C.S.T - Addmission form</title>
+  <link rel="stylesheet" href="styles1.css"/>
+</head>
+<body>
+  <header class="mainhead">
+    <h1>Sanskriti College of Science and Tech</h1>
+    <button onclick="window.location.href='login.html'" class="login-button">Login</button>
+  </header>
+
+  <nav class="mainnav">
+    <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
+    <a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;
+    <a href="courses.html">Courses</a>&nbsp;&nbsp;&nbsp;
+    <a href="facilities.html">Facilities</a>&nbsp;&nbsp;&nbsp;
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <section id="apply" class="apply">
+    <section class="personal-details">
+      <h2>Personal Details</h2>
+      <form>
+        <!-- Fullname -->
+        <label for="parentname" class="lable_type1">Full Name</label><br>
+        <input type="text" id="fullname" name="fullname" required>
+        <br><br>
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth</label><br>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        <!-- Gender with option -->
+        <label>Gender</label>
+        <div class="gender-group">
+          <label><input type="radio" name="gender" value="Male" required> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+          <label><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+        <br><br>
+        <!-- Guardian Name -->
+        <label for="fullname">Father's / Mother's name</label><br>
+        <input type="text" id="parentname" name="parentname" required>
+        <br><br>
+        <!-- category -->
+        <label for="category">Category</label><br>
+        <select id="category" name="category" required>
+            <option value="" disabled selected>Select your category</option>
+            <option>General</option>
+            <option>SC</option>
+            <option>ST</option>
+            <option>OBC</option>
+            <option>Others</option>
+        </select>
+        <br><br>
+        <!-- address -->
+        <label for="address">Address</label><br>
+        <textarea id="address" name="address" rows="3" required>Address</textarea>
+      </form>
+    </section>
+    <hr>
+    <!-- Academic Details -->
+    <section class="academic-details">
+      <h2>Academic Details</h2>
+      <form>
+        <!-- About Tenth -->
+        <label for="board10">10th Board</label><br>
+        <input type="text" id="board12" name="board12" required>
+        <label for="percentage10">10th Percentage</label><br>
+        <input type="number" id="percentage10" name="percentage10" min="0" max="100" required>
+        <br><br>
+        <!-- About 12th -->
+        <label for="board12">12th Board</label><br>
+        <input type="text" id="board12" name="board12" required>
+        <label for="percentage12">12th Percentage</label><br>
+        <input type="number" id="percentage12" name="percentage12" min="0" max="100" required>
+      </form>
+    </section>
+    <hr>
+    <!-- Course Selection -->
+    <section class="course-selection">
+      <h2>Course Selection</h2>
+      <form>
+        <label for="course">Select Course</label>
+        <select id="course" name="course" required>
+          <option value="" disabled selected>Select Your Course</option>
+          <option>B.Tech in Computer Science</option>
+          <option>B.Tech in Mechanical Engineering</option>
+          <option>B.Tech in Electrical Engineering</option>
+          <option>BCA</option>
+          <option>MCA</option>
+          <option>MBA</option>
+        </select>
+        <br><br>
+        <label for="shift">Preferred Shift</label>
+        <select id="shift" name="shift" required>
+          <option value="" disabled selected>Select Shift</option>
+          <option>Morning</option>
+          <option>Evening</option>
+        </select>
+      </form>
+    </section>
+    <hr>
+    <!-- Documents Upload -->
+    <section class="documents-upload">
+      <h2>Documents Upload</h2>
+      <form>
+        <label for="photo">Passport Size Photo</label><br>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+        <br><br>
+        <label for="signature">Signature</label><br>
+        <input type="file" id="signature" name="signature" accept="image/*" required>
+        <br><br>
+        <label for="marksheet">Marksheet (10th & 12th)</label>
+        <input type="file" id="marksheet" name="marksheet" accept=".pdf,.jpg,.png" required>
+      </form>
+    </section>
+    <hr>
+    <!-- Contact Details -->
+    <section class="contact-details">
+      <h2>Contact Details</h2>
+      <form>
+        <!-- for mobile number -->
+        <label for="mobile">Mobile Number</label><br>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+        <!-- For email address -->
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" name="email" required>
+      </form>
+    </section>
+    <hr>
+    <!-- Declaration & Submit -->
+    <section class="declaration-submit">
+      <h2>Declaration & Submit</h2>
+      <form>
+        <label>
+          <input type="checkbox" required><br>
+          I hereby declare that the information provided is true and correct.
+        </label>
+        <br><br>
+        <button type="submit">Submit Application</button>
+      </form>
+    </section>
+    <hr>
+    <!-- Payment Section -->
+    <section class="payment-section">
+      <h2 class="payment-title">Payment Details</h2>
+      <form id="paymentForm">
+        <p class="amount-heading">Choose Payment Amount</p>
+        <div class="amount-options">
+          <label class="amount-label">
+            <input type="radio" name="amount" value="40000" required>
+            ₹40,000
+          </label>
+          <label class="amount-label">
+            <input type="radio" name="amount" value="35000">
+            ₹35,000
+          </label>
+          <label class="amount-label">
+            <input type="radio" name="amount" value="20000">
+            ₹20,000
+          </label>
+          <label class="amount-label">
+            <input type="radio" name="amount" value="other" id="otherRadio">
+            Other
+          </label>
+          <textarea type="amount" id="amount" name="amount" pattern="[0-9]{10}" required>Enter Custom Amount</textarea>
+        </div>
+        <button type="submit" class="pay-button">Pay Now</button>
+      </form>
+    </section>
+  </section>
+
+  <footer>
+    <a href="#about.html">About Us</a> |
+    <a href="#">FAQ</a> |
+    <a href="#contact.html">Contact Us</a><br><br>
+    © 2025 Sanskriti College of Science and Tech
+  </footer>
+</body>
+</html>
