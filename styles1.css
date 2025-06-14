@@ -110,12 +110,12 @@
       text-align: center;
       letter-spacing: 2px;
       margin-bottom: 25px;
-      font-size: 30px;
+      font-size: 20px;
       color:#2e388d;
     }
 
     .apply label {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       color: #343e99;
     }
   
@@ -126,7 +126,7 @@
       border-color: #242e8d;
       border-radius: 10px;
       margin-bottom: 18px;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: #d0d5ff;
       padding: 12px;
       width: 90%;
@@ -167,7 +167,7 @@
       color: #ecf0f1;
       letter-spacing: 2px;
       margin-bottom: 30px;
-      font-size: 40px;
+      font-size: 30px;
     }
 
     .amount-heading {
@@ -207,7 +207,7 @@
     margin-bottom: 25px;
     border: none;
     border-radius: 12px;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .pay-button {
