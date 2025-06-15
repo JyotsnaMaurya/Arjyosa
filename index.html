@@ -1,130 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>S.C.T - Home</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sanskriti College – Register</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family:'Montserrat',sans-serif; line-height:1.6; color:#333; }
+    .hero { background:#004080; color:white; padding:2rem; text-align:center; }
+    .hero h1 { margin:0 0 .5rem; font-size:2rem; }
+    .hero p { margin:0 0 1.5rem; font-size:1.1rem; }
+    .button { background:#FFC107; color:#004080; padding:.75rem 1.5rem; font-weight:600;
+              border:none; cursor:pointer; border-radius:4px; text-decoration:none; }
+    .section { padding:2rem 1rem; max-width:800px; margin:auto; }
+    .cards { display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; }
+    .card { border:1px solid #ddd; border-radius:6px; padding:1rem; width:250px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    .card h3 { margin-top:0; color:#004080; }
+    .card p { font-size:.95rem; }
+    form { background:#f9f9f9; padding:1.5rem; border-radius:6px;
+           box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+    .form-group { margin-bottom:1rem; }
+    .form-group label { display:block; margin-bottom:.3rem; font-weight:600; }
+    .form-group input, .form-group select { width:100%; padding:.5rem; 
+         border:1px solid #ccc; border-radius:4px; font-size:1rem; }
+    .error { color:#D8000C; font-size:.9rem; display:none; margin-top:.3rem; }
+    .btn-group { text-align:right; }
+    .btn-group button { padding:.6rem 1.2rem; border:none; border-radius:4px;
+       font-size:1rem; margin-left:.5rem; cursor:pointer; }
+    .btn-primary { background:#004080; color:white; }
+    .btn-reset { background:#ccc; color:#333; }
+    footer { text-align:center; padding:1rem 0; font-size:.9rem; background:#004080; color:white; margin-top:2rem; }
+    @media(max-width:600px){ .cards { flex-direction:column; } }
+  </style>
 </head>
 <body>
-  <header class="mainhead">
-    <h1>Sanskriti College of Science and Tech</h1>
-    <button onclick="window.location.href='login.html'" class="login-button">Login</button>
-  </header>
-
-  <nav class="mainnav">
-    <a href="#home">Home</a>&nbsp;&nbsp;&nbsp;
-    <a href="#about">About Us</a>&nbsp;&nbsp;&nbsp;
-    <a href="#facilities">Facilities</a>&nbsp;&nbsp;&nbsp;
-    <a href="courses.html">Courses</a>&nbsp;&nbsp;&nbsp;
-    <a href="contact.html">Contact Us</a>
-  </nav>
-
-  <section id="" class="home">
-    <header class="subhead-home">
-      <h3>Your future begins here. Explore courses, learn with the best faculty, and build your dream career.</h3>
-    </header>
+  
+  <section class="hero">
+    <h1>Join Sanskriti College of Science & Tech</h1>
+    <p>Shape your future with our premier faculty, cutting-edge labs, and innovative environment.</p>
+    <a href="#register" class="button">Register Now</a>
   </section>
 
-  <section id="home">
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Shape Your Future at Sanskriti College</h1>
-        <h2>Welcome to Sanskriti College of Science and Tech</h2>
-        <p>
-          where learning meets innovation. We are delighted to have you explore a campus that fosters curiosity,
-          encourages research, and shapes leaders of tomorrow. At Sanskriti, we believe that education is more
-          than just academics—it's a journey of growth, creativity, and purpose. With a dynamic curriculum, passionate
-          faculty, and cutting-edge facilities, we empower students to rise beyond expectations and make meaningful
-          contributions to the world. Step into a future full of possibilities—your journey begins here.Scientific
-          learning, inspired minds, and a future-ready environment.
-        </p>
-        <button onclick="window.location.href='apply.html'" class="btn main-btn">Take Addmission now</button>
-      </div>
-    </section>
-  </section>
-
-  <section id="about" class="about">
-    <h2>About Sanskriti College of Science and Tech:</h2>
-    <p>
-      <b>Sanskriti College of Science and Tech</b>
-      is a forward-thinking institution dedicated to academic excellence and technological advancement. Located in a vibrant and inclusive learning environment, the college offers a wide range of programs in science,
-      engineering, and technology, all designed to meet the needs of the modern world. With a strong emphasis on innovation, research, and industry-aligned education, Sanskriti College empowers students to think
-      critically, solve real-world problems, and become leaders in their chosen fields. Our experienced faculty, modern infrastructure, and holistic development programs ensure that every student graduates not only with
-      knowledge, but also with confidence, ethics, and a passion for lifelong learning.
-    </p>
-    <p>
-      At <b>Sanskriti College</b>, education goes beyond classrooms—it's about nurturing curiosity, creativity, and
-      character. We believe in developing not just skilled professionals, but responsible citizens who contribute positively to society. Our campus is equipped with state-of-the-art laboratories, collaborative learning spaces,
-      digital libraries, and innovation hubs to support every student's academic journey. Through workshops, internships, cultural activities, and community outreach, we create a balanced environment where students grow intellectually, 
-      socially, and emotionally. Sanskriti College is more than a place to learn—it's a place to discover who you are and what you can become.
-    </p>
-  </section>
-
-  <section class="mission">
-    <h2>Our Mission & Vision</h2>
-    <div class="mission-content">
+  <section class="section">
+    <h2 style="text-align:center; color:#004080;">Meet the Designers</h2>
+    <div class="cards">
       <div class="card">
-        <h3>Mission</h3>
-        <p>
-          To deliver quality science and technical education that fosters discovery, innovation, and leadership in a rapidly changing world.
-        </p>
+        <h3>Sana</h3>
+        <p><strong>Role:</strong> UI/UX Lead</p>
+        <p>Sana crafted the modern layout, color palette, and responsive interactions, working 50+ hours to perfect every visual detail.</p>
       </div>
       <div class="card">
-        <h3>Vision</h3>
-        <p>
-          To be a nationally recognized institution producing visionary scientists, engineers, and entrepreneurs for tomorrow.
-        </p>
+        <h3>Aarohi</h3>
+        <p><strong>Role:</strong> Front‑End Developer</p>
+        <p>Aarohi implemented the HTML/CSS/JS, form validation logic, and responsive breakpoints—she tested across browsers and devices nonstop.</p>
+      </div>
+      <div class="card">
+        <h3>Jyotsna</h3>
+        <p><strong>Role:</strong> Content & QA Specialist</p>
+        <p>Jyotsna wrote all the content, crafted the voice‑over text, proofread, and performed QA to ensure pixel-perfect accuracy.</p>
       </div>
     </div>
   </section>
 
-  <section id="why" class="why-choose">
-    <h2>Why Choose Sanskriti College?</h2>
-    <ul>
-      <li>✅ National-level faculty and expert mentors</li>
-      <li>✅ Advanced labs, research centers, and library</li>
-      <li>✅ Focus on innovation, coding, and problem-solving</li>
-      <li>✅ Internship and placement support from top firms</li>
-      <li>✅ Green campus with modern infrastructure</li>
-    </ul>
-  </section>
-
-  <section class="cta">
-    <h2>Start Your Journey With Us</h2>
-    <p>Join Sanskriti College and become part of a future shaped by science, technology, and innovation.</p>
-    <a href="admission-form.html" class="btn main-btn">Take Admission Now</a>
-  </section>
-
-  <section id="facilities" class="Facilities">
-    <header class="subhead">
-      <h2>Facillities</h2>
-    </header>
-    <ul>
-      <li>Library with 10,000+ books</li>
-      <li>Modern Computer Labs</li>
-      <li>Sports Ground</li>
-      <li>Auditorium</li>
-      <li>Canteen & Hostel</li>
-    </ul>
-  </section>
-
-  <section id="" class="contact">
-    <header class="subhead">
-      <h2>Contact us</h2>
-    </header>
-    <form>
-      <input type="text" placeholder="Your Name" required><br>
-      <input type="email" placeholder="Your Email" required><br>
-      <textarea placeholder="Your Message" required></textarea><br>
-      <button type="submit">Send Message</button>
+  <section id="register" class="section">
+    <h2 style="color:#004080;">Student Registration Form</h2>
+    <form onsubmit="return validateForm();">
+      <div class="form-group">
+        <label for="logonId">Student ID *</label>
+        <input type="text" id="logonId" required placeholder="e.g., SCT2025001">
+      </div>
+      <div class="form-group">
+        <label for="firstName">First Name *</label>
+        <input type="text" id="firstName" required placeholder="Your first name">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name *</label>
+        <input type="text" id="lastName" required placeholder="Your last name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" required placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label for="password">Password *</label>
+        <input type="password" id="password" required placeholder="Min. 8 characters">
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password *</label>
+        <input type="password" id="confirmPassword" required placeholder="Re-enter password">
+        <div id="error" class="error">⚠ Passwords must match & min length 8</div>
+      </div>
+      <div class="btn-group">
+        <button type="reset" class="btn-reset">Clear</button>
+        <button type="submit" class="btn-primary">Register</button>
+      </div>
     </form>
   </section>
-    
+
   <footer>
-    <a href="#about.html">About Us</a> |
-    <a href="#">FAQ</a> |
-    <a href="#contact.html">Contact Us</a><br>
     © 2025 Sanskriti College of Science and Tech
   </footer>
-</body>
-</html>
+
+  <script>
+    function validateForm() {
+      const pass = document.getElementById('password').value.trim();
+      const confirm = document.getElementById('confirmPassword').value.trim();
+      const err = document.getElementById('error');
+      if (pass.length < 8 || pass !== confirm) {
+        err.style.display = 'block';
+        return false;
+      }
+      err.style.display = 'none';
+      alert('🎉 Registration Successful! Welcome to Sanskriti Tech.');
+      return true;
+    }
+  </script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sanskriti College Registration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family:'Montserrat', sans-serif; background:#f5f8ff; }
+    .hero {
+      background:linear-gradient(to right, #004080, #001f4d);
+      color:white; text-align:center; padding:2rem 1rem; position:relative;
+    }
+    .hero img.logo { width:80px; position:absolute; top:20px; left:20px; }
+    .hero h1 { font-size:2.2rem; margin:1rem 0 0; }
+    .hero p { font-size:1.1rem; }
+
+    .iphone-frame {
+      width: 360px;
+      height: 720px;
+      background: #000;
+      border-radius: 40px;
+      margin: 2rem auto;
+      padding: 1rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      position: relative;
+    }
+    .iphone-screen {
+      background: white;
+      border-radius: 30px;
+      height: 100%;
+      overflow-y: auto;
+      padding: 1rem;
+    }
+
+    .section { padding: 1rem; text-align:center; }
+    .cards { display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; }
+    .card {
+      background:white;
+      border-radius:10px;
+      padding:1rem;
+      box-shadow:0 4px 8px rgba(0,0,0,0.1);
+      width:250px;
+    }
+    .card h3 { color:#004080; margin-bottom:0.5rem; }
+
+    form { text-align:left; }
+    .form-group { margin-bottom:1rem; }
+    .form-group label { font-weight:600; display:block; margin-bottom:.3rem; }
+    .form-group input { width:100%; padding:.5rem; border-radius:5px; border:1px solid #ccc; }
+    .btn-submit {
+      background:#004080; color:white; padding:.6rem 1.2rem;
+      border:none; border-radius:6px; font-size:1rem; cursor:pointer;
+      width:100%; margin-top:1rem;
+    }
+    .error { color:red; font-size:.85rem; display:none; }
+
+    @keyframes fadeInUp {
+      from { transform:translateY(20px); opacity:0; }
+      to { transform:translateY(0); opacity:1; }
+    }
+    .animated { animation: fadeInUp 0.6s ease-in-out; }
+
+    footer { text-align:center; padding:1rem; background:#004080; color:white; margin-top:2rem; font-size:.9rem; }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <img src="college-logo.png" alt="Sanskriti College Logo" class="logo">
+    <h1>Welcome to Sanskriti College</h1>
+    <p>Register now and join the future of innovation</p>
+  </div>
+
+  <div class="iphone-frame">
+    <div class="iphone-screen animated">
+      <form id="registerForm">
+        <div class="form-group">
+        </body>
+        </HTML>
