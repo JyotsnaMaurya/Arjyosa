@@ -1,3 +1,6 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600&family=Raleway:wght@400;600&display=swap');
+
 /* Reset and Base Styles */
 * {
   margin: 0;
@@ -5,75 +8,76 @@
   box-sizing: border-box;
 }
 
+/* Body */
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f5f8ff;
-  color: #111;
-  line-height: 1.6;
+  background: #f4f8ff;
+  margin: 0;
+  padding: 0;
+  color: #222;
 }
 
 /* Header */
 .mainhead {
-  background-color: #003366;
-  color: white;
-  padding: 20px 10px;
+  background: #001f4d;
+  color: #fff;
+  padding: 20px;
   text-align: center;
+  font-size: 2.2rem;
+  font-family: 'Raleway', sans-serif;
   position: relative;
-}
-
-.mainhead h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Login Button */
 .login-button {
   position: absolute;
   top: 20px;
-  right: 20px;
-  background-color: #0052cc;
+  right: 30px;
+  padding: 10px 20px;
+  background-color: #004080;
   color: white;
   border: none;
-  padding: 10px 18px;
-  font-size: 16px;
   border-radius: 6px;
+  font-size: 16px;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
-  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 .login-button:hover {
-  background-color: #003fa3;
+  background-color: #003366;
 }
 
-/* Navigation Bar */
+/* Navigation */
 nav.mainnav {
-  background-color: #004080;
+  background-color: #003366;
+  padding: 15px;
   text-align: center;
-  padding: 12px 0;
 }
 
 nav.mainnav a {
-  color: #e0eaff;
+  color: #dbe7ff;
   text-decoration: none;
-  margin: 0 16px;
   font-size: 18px;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  margin: 0 15px;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 nav.mainnav a:hover {
-  background-color: #002f5c;
-  padding: 8px 12px;
-  border-radius: 6px;
-  color: #fff;
+  background-color: #002855;
+  padding: 12px;
+  border-radius: 4px;
+  color: #ffffff;
 }
 
-/* Subhead */
-.subhead h2 {
+/* Section Title */
+.main-title {
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: #002147;
-  margin: 40px 0 10px;
+  margin: 2rem 0 1rem;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Courses Section */

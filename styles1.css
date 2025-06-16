@@ -1,60 +1,77 @@
-/* Main changes for all */
-  /* body */
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      padding: 0;
-    }
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600&family=Raleway:wght@400;600&display=swap');
 
-  /* Main head */
-    .mainhead, footer {
-      background: #000f66;
-      color: white;
-      padding: 10px;
-      font-family: 'Raleway', sans-serif;
-      text-align: center;
-      font-size: 2.5rem;
-      width: 100%;
-      max-height: 160px;
-    }
+/* Body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f4f8ff;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
 
-  /* Login button in top-right corner*/
-    .login-button {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      padding: 10px 20px;
-      background-color: #4c56af;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    .login-button:hover {
-      background-color: #454ba0;
-    }
+/* Header */
+.mainhead {
+  background: #001f4d;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  /* for main navigation */
-    nav.mainnav {
-      background-color: #1028af;
-      text-align: center;
-      padding: 15px;
-      font-size: 20px;
-    }
-    nav.mainnav a {
-      color: #d1d3f3;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    nav.mainnav a:hover {
-      background-color: #0b1d86;
-      padding: 20px;
-      color: #ffffffbb;
-    }
+/* Login Button */
+.login-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  padding: 10px 20px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-button:hover {
+  background-color: #003366;
+}
+
+/* Navigation */
+nav.mainnav {
+  background-color: #003366;
+  padding: 15px;
+  text-align: center;
+}
+
+nav.mainnav a {
+  color: #dbe7ff;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 15px;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav.mainnav a:hover {
+  background-color: #002855;
+  padding: 12px;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+/* Section Title */
+.main-title {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #002147;
+  margin: 2rem 0 1rem;
+  font-family: 'Raleway', sans-serif;
+}
 
 /* For login.html */
   /* container */
