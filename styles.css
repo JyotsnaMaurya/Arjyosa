@@ -273,6 +273,36 @@ nav.mainnav a:hover {
     .apply-btn:hover, .register-btn:hover {
       background-color: #454ba0;
     }
+    
+/* Aboutusss */
+  #about-us {
+    padding:2rem 1rem;
+    max-width:800px;
+    margin:auto; 
+  }
+
+  #about-us .cards {
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    justify-content:center;
+  }
+    
+  #about-us .card {
+    border:1px solid #ddd;
+    border-radius:6px;
+    padding:1rem;
+    width:250px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  }
+ 
+  #about-us .card h3 {
+    margin-top:0; color:#004080;
+  }
+  
+  #about-us .card p {
+    font-size:.95rem;
+  }
 
 /* Footer */
 footer {
