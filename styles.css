@@ -73,6 +73,57 @@ nav.mainnav a:hover {
   font-family: 'Raleway', sans-serif;
 }
 
+/* head, for Home */
+    .subhead-home {
+      background-image: url('https://i.pinimg.com/736x/70/c3/12/70c3120dba91d46514804826c9a17dd8.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 18px;
+      height: 65vh;
+      margin: 5px;
+      width: 100%;
+    }
+
+    .subhead-home h3 {
+      background-color: rgba(0, 0, 0, 0.308);
+      border-radius: 15px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 75px;
+      width: 100%;
+    }
+
+/* Hero */
+    .hero {
+      height: 90vh;
+      background: url('images/background.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-content {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 50px 30px;
+      border-radius: 10px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 25px;
+      font-family: 'Poppins', sans-serif;
+    }
+
 /* Introduction */
 .intro {
   max-width: 850px;
@@ -162,6 +213,66 @@ nav.mainnav a:hover {
 .facilities li strong {
   color: #003366;
 }
+
+/* Info Cards Section */
+.info-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.info-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-left: 6px solid #004aad;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+  font-size: 1.3rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Optional: Different Colors for Categories */
+  .info-card.faculty { border-left-color: #0066cc; }
+  .info-card.industry { border-left-color: #0099cc; }
+  .info-card.innovation { border-left-color: #3366cc; }
+  .info-card.campus { border-left-color: #0052cc; }
+
+/* for button */
+  .apply-btn, .register-btn {
+    padding: 10px 20px;
+    background-color: #2b358d;
+    color: white;
+    border: none;
+    border-color: #000d55;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #aebbff;
+      }
+
+    .apply-btn:hover, .register-btn:hover {
+      background-color: #454ba0;
+    }
 
 /* Footer */
 footer {
