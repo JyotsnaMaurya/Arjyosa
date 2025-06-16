@@ -256,23 +256,22 @@ nav.mainnav a:hover {
   .info-card.innovation { border-left-color: #3366cc; }
   .info-card.campus { border-left-color: #0052cc; }
 
-/* for button */
-  .apply-btn, .register-btn {
-    padding: 10px 20px;
-    background-color: #2b358d;
-    color: white;
-    border: none;
-    border-color: #000d55;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 25px;
-    cursor: pointer;
-    color: #aebbff;
-      }
+.btn-main-btn, .register-btn {
+  background-color: #004aad;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease;
+}
 
-    .apply-btn:hover, .register-btn:hover {
-      background-color: #454ba0;
-    }
+.btn-main-btn:hover,
+.register-btn:hover {
+  background-color: #003588;
+}
     
 /* Aboutusss */
   #about-us {
