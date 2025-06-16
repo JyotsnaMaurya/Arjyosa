@@ -1,136 +1,153 @@
-/* Main changes for all */
-  /* body */
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f4f4f4;
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600&family=Raleway:wght@400;600&display=swap');
 
-  /* Main head */
-    .mainhead, footer {
-      background: #000f66;
-      color: white;
-      padding: 10px;
-      font-family: 'Raleway', sans-serif;
-      text-align: center;
-      font-size: 2.5rem;
-      width: 100%;
-      max-height: 160px;
-    }
-
-/* for main navigation */
-    nav.mainnav {
-      background-color: #1028af;
-      text-align: center;
-      padding: 15px;
-      font-size: 20px;
-    }
-    nav.mainnav a {
-      color: #d1d3f3;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    nav.mainnav a:hover {
-      background-color: #0b1d86;
-      padding: 20px;
-      color: #ffffffbb;
-    }    
-
-/* Login button in top-right of content */
-    .login-button {
-      position: absolute;
-      top: 20px;
-      right: 20px; 
-      padding: 10px 20px;
-      background-color: #4c56af;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    .login-button:hover {
-      background-color: #454ba0;
-    }
-
-/*  additional by sana enhanced by me  */
-
-/* Intro Paragraph */
-  .intro {
-    max-width: 850px;
-    margin: 0 auto 2.5rem auto;
-    text-align: center;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #444;
-  }
-
-  /* Grid for Cards */
-  .college-info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-/* Card Styles */
-  .info-card {
-    background-color: #ffffff;
-    padding: 1.8rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .info-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
-  }
-
-/* Individual Card Colors */
-  .mission {
-    border-left: 6px solid #007acc;
-  }
-  .vision {
-    border-left: 6px solid #006666;
-  }
-  .campus {
-    border-left: 6px solid #9966cc;
-  }
-  .facilities {
-    border-left: 6px solid #cc6600;
-  }
-  .faculty {
-    border-left: 6px solid #008000;
-  }
-  .industry {
-    border-left: 6px solid #cc0033;
-  }
-
-/* Headings in Cards */
-  .info-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.8rem;
-    font-weight: 600;
-    color: #002147;
-  }
-
-/* Paragraphs in Cards */
-  .info-card p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-  }
-
-/* Facilities List Styling */
-  .facilities ul {
+/* Body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f4f8ff;
   margin: 0;
-  padding-left: 1.2rem;
+  padding: 0;
+  color: #222;
+}
+
+/* Header */
+.mainhead {
+  background: #001f4d;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Login Button */
+.login-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  padding: 10px 20px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-button:hover {
+  background-color: #003366;
+}
+
+/* Navigation */
+nav.mainnav {
+  background-color: #003366;
+  padding: 15px;
+  text-align: center;
+}
+
+nav.mainnav a {
+  color: #dbe7ff;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 15px;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav.mainnav a:hover {
+  background-color: #002855;
+  padding: 12px;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+/* Section Title */
+.main-title {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #002147;
+  margin: 2rem 0 1rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Introduction */
+.intro {
+  max-width: 850px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Grid Layout */
+.college-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+}
+
+/* Info Cards */
+.info-card {
+  background-color: #fff;
+  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Borders for Cards */
+.mission {
+  border-left: 6px solid #007acc;
+}
+.vision {
+  border-left: 6px solid #006666;
+}
+.campus {
+  border-left: 6px solid #9966cc;
+}
+.facilities {
+  border-left: 6px solid #cc6600;
+}
+.faculty {
+  border-left: 6px solid #008000;
+}
+.industry {
+  border-left: 6px solid #cc0033;
+}
+
+/* Card Headings */
+.info-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #002147;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Card Paragraphs */
+.info-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Facilities List */
+.facilities ul {
+  margin: 0;
+  padding-left: 1.4rem;
   list-style-type: square;
 }
 
@@ -139,37 +156,50 @@
   font-size: 1rem;
   line-height: 1.6;
   color: #444;
+  font-family: 'Poppins', sans-serif;
 }
 
 .facilities li strong {
   color: #003366;
 }
 
-/* Responsive Adjustments */
-  @media screen and (max-width: 600px) {
-    .main-title {
-      font-size: 2rem;
-    }
-
-    .intro {
-      font-size: 1rem;
-    }
-
-    .info-card {
-      padding: 1.2rem;
-    }
-
-    .info-card h3 {
-      font-size: 1.2rem;
-    }
-  }
-
-
+/* Footer */
 footer {
-  background: #000f66;
+  background: #001f4d;
   color: white;
   padding: 20px;
   text-align: center;
-  width: 100%;
-  max-height: 450px;
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: #c9ddff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+
+  .info-card {
+    padding: 1.2rem;
+  }
+
+  .info-card h3 {
+    font-size: 1.2rem;
+  }
 }
