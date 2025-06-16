@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>S.C.T - Registration</title> 
   <link rel="stylesheet" href="styles2.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="mainhead">
@@ -74,10 +75,67 @@
         <input type="checkbox" id="accessibility">
         <label for="accessibility">Activate Accessibility Feature</label>
       </div>
-      
+    </form>
+  </section>
+
+  <section class="hero">
+    <h1>Join Sanskriti College of Science & Tech</h1>
+    <p>Shape your future with our premier faculty, cutting-edge labs, and innovative environment.</p>
+    <a href="#register" class="button">Register Now</a>
+  </section>
+
+  <section class="section">
+    <h2 style="text-align:center; color:#004080;">Meet the Designers</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Sana</h3>
+        <p><strong>Role:</strong> UI/UX Lead</p>
+        <p>Sana crafted the modern layout, color palette, and responsive interactions, working 50+ hours to perfect every visual detail.</p>
+      </div>
+      <div class="card">
+        <h3>Aarohi</h3>
+        <p><strong>Role:</strong> Front‑End Developer</p>
+        <p>Aarohi implemented the HTML/CSS/JS, form validation logic, and responsive breakpoints—she tested across browsers and devices nonstop.</p>
+      </div>
+      <div class="card">
+        <h3>Jyotsna</h3>
+        <p><strong>Role:</strong> Content & QA Specialist</p>
+        <p>Jyotsna wrote all the content, crafted the voice‑over text, proofread, and performed QA to ensure pixel-perfect accuracy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="register" class="section">
+    <h2 style="color:#004080;">Student Registration Form</h2>
+    <form onsubmit="return validateForm();">
+      <div class="form-group">
+        <label for="logonId">Student ID *</label>
+        <input type="text" id="logonId" required placeholder="e.g., SCT2025001">
+      </div>
+      <div class="form-group">
+        <label for="firstName">First Name *</label>
+        <input type="text" id="firstName" required placeholder="Your first name">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name *</label>
+        <input type="text" id="lastName" required placeholder="Your last name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" required placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label for="password">Password *</label>
+        <input type="password" id="password" required placeholder="Min. 8 characters">
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password *</label>
+        <input type="password" id="confirmPassword" required placeholder="Re-enter password">
+        <div id="error" class="error">⚠ Passwords must match & min length 8</div>
+      </div>
       <div class="btn-group">
-        <button type="submit" class="submit-btn">Proceed with Registration</button>
-        <button type="reset" class="cancel-btn">Cancel</button>
+        <button type="reset" class="btn-reset">Clear</button>
+        <button type="submit" class="btn-primary">Register</button>
       </div>
     </form>
   </section>
@@ -110,6 +168,19 @@
 
       error.style.display = "none";
       alert("🎉 Registration successful!");
+      return true;
+    }
+
+    function validateForm() {
+      const pass = document.getElementById('password').value.trim();
+      const confirm = document.getElementById('confirmPassword').value.trim();
+      const err = document.getElementById('error');
+      if (pass.length < 8 || pass !== confirm) {
+        err.style.display = 'block';
+        return false;
+      }
+      err.style.display = 'none';
+      alert('🎉 Registration Successful! Welcome to Sanskriti Tech.');
       return true;
     }
   </script>
