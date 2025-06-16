@@ -343,3 +343,11 @@ footer a:hover {
     font-size: 1.2rem;
   }
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

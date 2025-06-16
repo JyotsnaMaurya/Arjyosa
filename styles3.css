@@ -201,3 +201,11 @@ footer a:hover {
     font-size: 0.95rem;
   }
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

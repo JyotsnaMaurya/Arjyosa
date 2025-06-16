@@ -254,3 +254,11 @@ footer {
   }
     
   @media(max-width:600px){ .cards { flex-direction:column; } }
+
+  /* Mobile styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

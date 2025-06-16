@@ -259,3 +259,11 @@ hr {
   background-color: #626ccc;;
   height: 6px;
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
